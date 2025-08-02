@@ -1,0 +1,221 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  font-size: large;
+  font-family: poppins, sans-serif;
+}
+
+.Partners{
+    display: flex;
+    margin-top: 2cm;
+    
+}
+.trader {
+  margin-left: 3cm;
+  color: #B71C1C;
+}
+
+.traders{
+     background: #ffffff;
+
+}
+.traders p{
+    width: 50%;
+    margin-left: 3cm;
+    font-size: large;
+     box-shadow: #db4f4f;
+    
+
+}
+.traders img{
+    width:  30%;
+    height: 70%;
+    margin-left: 3cm;
+    
+
+}
+.recyclers{
+    background: #ffffff;
+     
+
+}
+.recyclers p{
+    width: 70%;
+    font-size: large;
+    box-shadow: #eb4747;
+    margin-right: 4cm;
+   
+   
+    
+
+}
+.recyclers img{
+    width:  100%;
+    height: 70%;
+    
+
+}
+
+
+.team-page {
+  padding: 40px 0 40px 0;
+  min-height: 100vh;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #B71C1C;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #B71C1C;
+  font-weight: 500;
+}
+
+.intro {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: #403c3c;
+  font-size: 1.07rem;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #0001;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  width: 380px;
+  min-height: 130px;
+  gap: 18px;
+}
+
+.avatar {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF9800;
+  margin-right: 16px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.22rem;
+  font-weight: bold;
+  color: #B71C1C;
+}
+
+.title {
+  font-size: 1rem;
+  color: #B71C1C;
+  margin: 0 0 7px 0;
+}
+
+.quote {
+  font-family: poppins, sans-serif;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.icons a {
+  color: #B71C1C;
+  margin-right: 12px;
+  font-size: 1.38rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.icons a:hover {
+  color: #FF9800;
+}
+@media (max-width: 1024px) {
+  .Partners {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5cm;
+  }
+
+  .trader {
+    margin-left: 0;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .traders p,
+  .traders img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80% !important;
+    height: auto !important;
+  }
+
+  .recyclers p,
+  .recyclers img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80% !important;
+    height: auto !important;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: medium; 
+  }
+  .Partners {
+    margin-top: 1cm;
+  }
+
+  .trader {
+    margin-left: 0;
+  }
+
+  .traders p,
+  .traders img,
+  .recyclers p,
+  .recyclers img {
+    width: 95% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .traders p,
+  .recyclers p {
+    font-size: medium;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .card {
+    width: 90% !important;
+    min-height: auto;
+  }
+}
