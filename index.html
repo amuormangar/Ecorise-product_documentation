@@ -1,6 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+
+  <meta charset="UTF-8" />
+  <title>EcoRise Devs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="main-title">Our Partners</h1>
+  <div class="Partners">
+    <div class="traders">
+      <img src="IMAGES/Pick-up request.jpg" alt="Traders" />
+      <p>
+        Traders simply fill out a short form providing their name, location, and a brief description of the unsold secondhand clothes they want to be
+        collected. Once submitted, their pickup request is added to a list that recyclers can access. This system allows recyclers to know where and when to
+        come pick up these items efficiently.
+      </p>
+    </div>
+    <div class="recyclers">
+      <img src="IMAGES/recyclers screen.png" alt="Recyclers" />
+      <p>
+        Recyclers monitor the list of pending pickup requests submitted by traders. Each request includes the trader’s name, location, and a description of the
+        clothes awaiting pickup. When recyclers are ready, they visit the specified location to collect the unsold clothes as per the request.
+      </p>
+    </div>
+  </div>
+
+  <div class="team-page">
+    <h1 class="main-title">EcoRise Devs</h1>
+    <h2 class="subtitle">Who Made All Possible</h2>
+    <p class="intro">
+      Meet the passionate team behind EcoRise, dedicated to revolutionizing secondhand clothes traders with innovative solutions.
+    </p>
+    <div id="team-cards" class="team-cards"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoRise Product Documentation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+    <section id="footer-container">
+  <section class="faqs">
+    <header>
+      <h1>Trader Frequently Asked Questions</h1>
+      <p>Your Questions Answered</p>
+    </header>
+
+    <div class="container" id="faqContainer">
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>1. How do I request a pickup?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>Go to the “Pickup Request” section, select material types from the catalog, enter estimated weight and pickup location, then submit.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>2. What types of materials can I recycle?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>Only materials listed in the official catalog (e.g., Cotton, Denim, Polyester). You’ll see the list when making a request in the app.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>3. Do I need to sort the items?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>Yes. Please sort your items by material type as shown in the catalog for faster processing and fair payment.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>4. How much will I be paid?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>Each material has a price per kilogram, visible in the catalog. Payment is made after weighing and verification.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>5. How long does it take for pickup to happen?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>Pickups are scheduled within 24–72 hours after your request is confirmed.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-header" tabindex="0">
+          <h3>6. Is there a cost for pickup?</h3><span>+</span>
+        </div>
+        <div class="faq-body">
+          <p>No, pickups are completely free for verified traders.</p>
+        </div>
+      </div>
+       <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>7. Where can I see my payment status?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>Check the “Payments” tab in your dashboard to view payment updates.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>8. What if the recycling company doesn’t show up?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>Use the Help section or in-app contact options to follow up or reschedule.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>9. Can I edit or cancel a pickup request?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>Yes, but only within 24 hours of submitting the request.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>10. How does the points system work?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>Each successful paid pickup earns you loyalty points. These accumulate automatically in your
+                        profile.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>11. What happens when I reach 500 points?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>You unlock a chance to spin a reward wheel. You must spin within 7 days before the points reset
+                        to
+                        zero.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-header" onclick="toggleFAQ(this)">
+                    <h3>1. How do I claim my reward after spinning?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-body">
+                    <p>You must physically collect your reward at the recycling company. Details will be shared in your
+                        app
+                        after you win.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="toggleFaqBtn" aria-expanded="false">Show More</button>
+
+  </section>
+
+  <section id="feedback-section">
+    <h2>Ask any question</h2>
+    <form id="feedbackForm" aria-label="Feedback form">
+      <textarea id="question" name="question" placeholder="Type your question here..." required aria-label="Type your question"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="responseMsg" aria-live="polite"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-image">
+        <img src="Images/ecoLogo.png" alt="EcoRise Logo" />
+      </div>
+      <div class="footer-contact">
+        <p>Email: ecorise@gmail.com</p>
+        <p>Phone: +254742838976</p>
+        <p>Phone: +25456336937</p>
+        <p>Location: Korongo Road 616., Karen</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <hr />
+      <p>
+      &copy; 2025 Your Recycling App. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  </section>
+
+  <script src="index.js"></script>
+=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoRise Hub - Revolutionizing Recycling</title>
@@ -84,5 +296,7 @@
         </section>
     </main>
     <script src="index.js"></script>
+
 </body>
 </html>
+
